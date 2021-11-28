@@ -17,7 +17,7 @@
 
 <body>
 
-    <header class="contenedor-flex">
+    <header class="header-flex">
         <div>
             <img src="imagenes/logo.svg" alt="Logo">
         </div>
@@ -35,10 +35,11 @@
         </div>
     </header>
 
-    <section>
+    <section class="flex-section">
         <div>
-            <h1>Bring everyone together to build better products.</h1>
-            <p class="parrafo">Manage makes it simple for software teams to plan day-to-day tasks while keeping the
+            <h1 class="titulos">Bring everyone together to build better products.</h1>
+            <p class="parrafos">Manage makes it simple for software teams <br> to plan day-to-day tasks while keeping
+                the <br>
                 large team goals in view</p>
             <button class="btn">Get Started</button>
         </div>
@@ -48,67 +49,76 @@
     </section>
 
 
-    <section>
-        <div>
-            <h2>What´s different about Manage?</h2>
-            <p class="parrafo">Manage provides all the functionality your teas needs, without the complexity. Our
-                software is tailor-made for modern digital product teams</p>
+    <section class="flex-section">
+        <div class="column">
+            <h2 class="titulos">What´s different about Manage?</h2>
+            <p class="parrafos">Manage provides all the functionality your <br> team needs, without the complexity. Our
+                <br> software is tailor-made for modern digital <br> product teams
+            </p>
         </div>
-        <ol>
-            <li>
-                <h4>Track company-wide progress</h4>
-                <p class="parrafo">See how your day-to-day tasks fit into the wider vision. Go from tracking progress at
-                    the
-                    milestone level all the way done to the smallest of details. Never lose sight of the bigger picture
-                    again.</p>
-            </li>
-            <li>
-                <h4>Advance built-in reports</h4>
-                <p class="parrafo">Set internal delivery estimates and track progress toward company goals. Our
-                    customisable
-                    dashboard helps you build out the reports you need to keep key stakeholders informed.</p>
-            </li>
-            <li>
-                <h4>Everything you need in one place</h4>
-                <p class="parrafo">Stop jumping from one service to another to communicate, store files, track tasks and
-                    share documents. Manage offers an all-in-one team productivity solution.
-            </li>
-        </ol>
-        <div>
-            <button class="btn">Get Started</button>
+        <div class="column">
+            <ol>
+                <li>
+                    <h4 class="titulos">Track company-wide progress</h4>
+                    <p class="parrafos">See how your day-to-day tasks fit into the wider vision. Go from tracking
+                        progress at
+                        the
+                        milestone level all the way done to the smallest of details. Never lose sight of the bigger
+                        picture
+                        again.</p>
+                </li>
+                <li>
+                    <h4 class="titulos">Advance built-in reports</h4>
+                    <p class="parrafos">Set internal delivery estimates and track progress toward company goals. Our
+                        customisable
+                        dashboard helps you build out the reports you need to keep key stakeholders informed.</p>
+                </li>
+                <li>
+                    <h4 class="titulos">Everything you need in one place</h4>
+                    <p class="parrafos">Stop jumping from one service to another to communicate, store files, track
+                        tasks and
+                        share documents. Manage offers an all-in-one team productivity solution.
+                </li>
+            </ol>
         </div>
     </section>
 
-    <section>
-        <h2>What they´ve said</h2>
-        <div>
-            <div>
-                <img src="imagenes/avatar-anisha.png" alt="Avatar">
+    <section id="cards-section">
+        <h2 class="titulos">What they´ve said</h2>
+        <div id="contenedor-flex">
+
+            <div class="contenedor-card">
+
+                <img src="imagenes/avatar-anisha.png" alt="Avatar" class="profile-card">
                 <h4>Anisha Li</h4>
-                <p class="parrafo">“Manage has supercharged our team´s workflow. The ability to maintain visibility on
+                <p class="parrafos">“Manage has supercharged our team´s workflow. The ability to maintain visibility on
                     larger milestones at all times keeps everyone motivated.”</p>
             </div>
 
-            <div>
-                <img src="imagenes/avatar-ali.png" alt="Avatar">
+            <div class="contenedor-card">
+
+                <img src="imagenes/avatar-ali.png" alt="Avatar" class="profile-card">
+
                 <h4>Ali Bravo</h4>
-                <p class="parrafo">“We have been able to cancel so many other subscriptions since using manage. There ir
-                    no more cross-channel confusion and everyone is much more focused.”</p>
+                <p class="parrafos">“We have been able to cancel so many other subscriptions since using manage. There
+                    ir no more cross-channel confusion and everyone is much more focused.”</p>
             </div>
 
-            <div>
-                <img src="imagenes/avatar-richard.png" alt="Avatar">
+            <div class="contenedor-card">
+
+                <img src="imagenes/avatar-richard.png" alt="Avatar" class="profile-card">
+
                 <h4>Richard Watts</h4>
-                <p class="parrafo">“Manage allows us to provide structure and process. It keeps us organized and
+                <p class="parrafos">“Manage allows us to provide structure and process. It keeps us organized and
                     focused. I can´t stop recommending them to everyone i talk to!”</p>
             </div>
         </div>
         <button class="btn">Get Started</button>
     </section>
 
-    <section>
+    <section id="prefooter">
         <div>
-            <h2>Simplify hoy your team words today.</h2>
+            <h2>Simplify hoy your team <br> words today.</h2>
         </div>
         <div>
             <button id="btn2">Get Started</button>
@@ -116,38 +126,37 @@
     </section>
 
     <footer>
-        <div>
+        <div class="flex-column">
             <img src="imagenes/logo.svg" alt="Logo">
-        </div>
-        <div>
-            <i class="fab fa-facebook-square"></i>
-            <i class="fab fa-youtube"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-pinterest"></i>
-            <i class="fab fa-instagram"></i>
+            <div id="iconos">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"> <i class="fab fa-pinterest"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
         </div>
         <nav>
-            <ul>
+            <ul class="flex-listas">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Pricing</a></li>
                 <li><a href="#">Product</a></li>
                 <li><a href="#">About Us</a></li>
-
             </ul>
         </nav>
         <nav>
-            <ul>
+            <ul class="flex-listas">
                 <li><a href="#">Careers</a></li>
                 <li><a href="#">Comunity</a></li>
                 <li><a href="#">Privacy Policy</a></li>
             </ul>
         </nav>
-        <div>
+        <div class="flex-column">
             <form action="" method="post">
                 <input type="email">
-                <input type="button" value="Go">
+                <button type="submit">Go</button>
             </form>
-            <p>Copyright 2020. All Rights Reserved</p>
+            <p class="parrafos">Copyright 2020. All Rights Reserved</p>
         </div>
     </footer>
 

@@ -1,48 +1,301 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 body {
-    font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 16px;
-    background-color: #E5E5E5;
+    background-color:rgba(229, 228, 229,0.2);
+    opacity: 10;
+}
+
+/** TITULOS Y PARRAFOS*/
+
+.titulos {
+    color: #232C50;
+}
+
+.parrafos {
+    color: #B3B2B7;
 }
 
 /** HEADER */
 
-.contenedor-flex {
+.header-flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3% 2%;
+    padding: 2% 3%;
+    margin: 3% 7%;
+}
+
+header nav {
+    flex-grow: 0.2;
 }
 
 .listas-flex {
     display: flex;
     list-style: none;
+    justify-content: space-around;
+    font-weight: 500;
+    font-size: 14px;
 }
 
 .listas-flex a {
     color: #242E52;
+    text-decoration: none;
 }
 
+.listas-flex a:visited {
+    color: #242E52;
+}
+
+.listas-flex a:hover {
+    color: rgb(143, 148, 167);
+}
+
+/* TODO: SECTIONS */
+
+.flex-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 10% 10%;
+}
+
+/** PRIMER SECTION */
+
+
+.flex-section h1 {
+    font-size: 58px;
+    font-weight: 700;
+    margin: 28px 0px;
+    line-height: 66,47px;
+}
+
+.flex-section p {
+    margin: 28px 0;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+/** SEGUNDO SECTION */
+
+.column {
+    width: 40vw;
+}
+
+.column h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 41px;  
+}
+
+.column p .parrafos {
+ padding-right: 15%;
+}
+
+.column ol {
+    padding: 0 8%;
+    margin: 0 2%;
+}
+
+
+
+/*TODO: CARDS SECTION */
+
+#cards-section {
+    text-align: center;
+    margin: 5% 0;
+}
+
+#cards-section h2 {
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 61px;
+    margin-bottom: 8%;
+}
+
+#cards-section button {
+    margin-top: 2%;
+}
+
+#contenedor-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-card {
+    background-color: #FAFAFA;
+    width:445px;
+    height: 219px;
+}
+
+.profile-card {
+    height: 70px;
+    width: 70px;
+    position: relative;
+    bottom: 17%;
+}
+
+.contenedor-card h4 {
+    color: #3F4868;
+    font-weight: 700;
+    position: relative;
+    bottom: 5%;
+    margin-bottom: 2%
+}
+
+.contenedor-card p {
+    font-weight: 600;
+    padding: 0 4%;
+    text-align: center;
+}
+
+/** PREFOOTER */
+
+#prefooter {
+    height: 25vh;
+    width: 100%;
+    background-color: #F3613C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+#prefooter h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+
+/** FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color:#1E1E26;
+    height: 30vh;
+    width: 100%;
+    color: white;
+    padding: 2%;
+}
+
+footer nav ul {
+    list-style: none;
+}
+
+.flex-listas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: 400;
+}
+
+footer a:visited {
+    color: white;
+}
+
+footer a:hover {
+    color: rgb(242, 95, 58);
+}
+
+footer p {
+    font-weight: 500;
+    font-size: 12.5px;
+    text-align: center;
+}
+
+
+/** FLEX EN FOOTER */
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* ICONOS */
+
+#iconos {
+   display: flex;
+   justify-content: space-between;
+}
+
+#iconos i:hover {
+    color: orange;
+}
+
+/* FORM */
+
+form input {
+    height: 44px;
+    width: 201px;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+form button {
+    padding: 10px;
+    width: 63px;
+    height: 48px;
+    left: 209.91px;
+    background: #f3603b;
+    box-shadow: 0px 4px 8px 0px #F2613B80;
+    border-radius: 50px;
+    border: none;
+    font-size: 13px;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+form button:hover {
+    cursor: pointer;
+    background-color: rgba(243, 96, 59, 0.6);
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
 /** BOTON CLASE */
+
 .btn {
-    font-family: 'Be Vietnam Pro', sans-serif;
     font-weight: 500;
     height: 44px;
-    width: 134px;
+    width: 140px;
     border-radius: 50px;
     padding: 10px;
     background-color:rgb(242, 95, 58);
-    color: white;
+    color: rgb(248, 222, 222);
     box-shadow: 0px 4px 8px 0px #F2613B80;
     border: none; 
 }
 
 .btn:hover{
     cursor: pointer;
-    background-color:rgba(242, 95, 58,0.6) ;
+    background-color:rgba(242, 95, 58,0.6);
+}
+
+#btn2 {
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19px;
+    color: rgb(243, 96, 59);
+    border: none;
+    width: 134px;
+    height: 44px;
+}
+
+#btn2:hover {
+    color:rgba(243, 96, 59,0.5);
+    cursor: pointer;
 }
