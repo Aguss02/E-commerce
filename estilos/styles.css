@@ -1,5 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
+    background-color: #E5E5E5;
+}
+
+/** HEADER */
+
+.contenedor-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 2%;
+}
+
+.listas-flex {
+    display: flex;
+    list-style: none;
+}
+
+.listas-flex a {
+    color: #242E52;
+}
 
 /** BOTON CLASE */
 .btn {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 500;
+    height: 44px;
+    width: 134px;
+    border-radius: 50px;
+    padding: 10px;
+    background-color:rgb(242, 95, 58);
+    color: white;
+    box-shadow: 0px 4px 8px 0px #F2613B80;
+    border: none; 
+}
 
+.btn:hover{
+    cursor: pointer;
+    background-color:rgba(242, 95, 58,0.6) ;
 }
