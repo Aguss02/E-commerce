@@ -43,6 +43,7 @@ body {
 }
 
 
+
 /* TODO: HEADER */
 
 header {
@@ -79,6 +80,15 @@ header nav {
 .li-flex a:hover {
     color: rgb(143, 148, 167);
 }
+
+/* BARRAS MOBILE */
+
+#bars {
+    display: none;
+    font-size: 20px;
+    color: #242E52;
+}
+
 
 /* TODO: SECTIONS */
 
@@ -336,25 +346,19 @@ form button:hover {
 
 @media screen and (max-width: 375px) {
 
-    .contenido img {
-        width: 100%;
+    /* MQ PARA EL HEADER */
+    
+    .nav-mobile {
+        display: none;
     }
 
-    .contenido {
-        text-align: center;
+    header img {
+        height: 4vh;
+        margin-top: 10px;
     }
 
-    .contenido h1 {
-        font-size: 40px;
+    #bars {
+      display: block;
     }
-
-    .contenido ol {
-        text-align: left;
-        margin-top: 5%;
-    }
-
-    .contenido {
-
-    }
-
+    
 }
