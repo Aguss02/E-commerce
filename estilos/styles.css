@@ -1,3 +1,5 @@
+/* GENERALES */
+
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -11,7 +13,7 @@ body {
     opacity: 10;
 }
 
-/** TITULOS Y PARRAFOS*/
+/* TITULOS Y PARRAFOS*/
 
 .titulos {
     color: #232C50;
@@ -21,7 +23,7 @@ body {
     color: #B3B2B7;
 }
 
-/** HEADER */
+/* TODO: HEADER */
 
 .header-flex {
     display: flex;
@@ -30,6 +32,8 @@ body {
     padding: 2% 3%;
     margin: 3% 7%;
 }
+
+/* Barra de navegación */
 
 header nav {
     flex-grow: 0.2;
@@ -58,52 +62,56 @@ header nav {
 
 /* TODO: SECTIONS */
 
-.flex-section {
+/*contenedor de las section */
+
+.contenedor-flex {
     display: flex;
-    justify-content: space-between;
-    margin: 10% 10%;
+    margin: 5% 10%;
 }
 
-/** PRIMER SECTION */
+/* contenedor flex, cada div dentro del flex tiene este valor */
 
+.contenido {
+    width: 40vw;
+}
 
-.flex-section h1 {
+/* ? PRIMER SECTION */
+
+.contenedor-flex h1 {
     font-size: 58px;
     font-weight: 700;
     margin: 28px 0px;
     line-height: 66,47px;
 }
 
-.flex-section p {
+.contenedor-flex p {
     margin: 28px 0;
     font-weight: 500;
     line-height: 26px;
 }
 
-/** SEGUNDO SECTION */
+/* ? SEGUNDO SECTION */
 
-.column {
-    width: 40vw;
-}
-
-.column h2 {
+.contenido h2 {
     font-size: 36px;
     font-weight: 700;
     line-height: 41px;  
 }
 
-.column p .parrafos {
+.contenido p .parrafos {
  padding-right: 15%;
 }
 
-.column ol {
+.contenido ol {
     padding: 0 8%;
     margin: 0 2%;
 }
 
 
 
-/*TODO: CARDS SECTION */
+/*TODO: SECTION CARDS */
+
+/* Contenedor padre cards */
 
 #cards-section {
     text-align: center;
@@ -121,10 +129,16 @@ header nav {
     margin-top: 2%;
 }
 
+/* Cards */
+
+/* contenedor de todas las cards */
+
 #contenedor-flex {
     display: flex;
     justify-content: center;
 }
+
+/* cards individuales */
 
 .contenedor-card {
     background-color: #FAFAFA;
@@ -153,7 +167,7 @@ header nav {
     text-align: center;
 }
 
-/** PREFOOTER */
+/*TODO: PREFOOTER */
 
 #prefooter {
     height: 25vh;
@@ -172,7 +186,17 @@ header nav {
     color: #FFFFFF;
 }
 
-/** FOOTER */
+/*TODO: FOOTER */
+
+/** FLEX EN FOOTER */
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* FOOTER */
 
 footer {
     display: flex;
@@ -184,15 +208,20 @@ footer {
     padding: 2%;
 }
 
-footer nav ul {
+footer nav {
+    flex-grow: 0.1;
+}
+
+footer li {
+    margin-top: 12px;
     list-style: none;
 }
 
 .flex-listas {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 }
+
 
 footer a {
     text-decoration: none;
@@ -214,15 +243,7 @@ footer p {
 }
 
 
-/** FLEX EN FOOTER */
-
-.flex-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-/* ICONOS */
+/* REDES SOCIALES */
 
 #iconos {
    display: flex;
@@ -233,7 +254,7 @@ footer p {
     color: orange;
 }
 
-/* FORM */
+/* FORMULARIO */
 
 form input {
     height: 44px;
@@ -242,16 +263,16 @@ form input {
     padding: 10px;
 }
 
+/* BOTON DE FORMULARIO */
+
 form button {
     padding: 10px;
     width: 63px;
     height: 48px;
-    left: 209.91px;
     background: #f3603b;
     box-shadow: 0px 4px 8px 0px #F2613B80;
     border-radius: 50px;
     border: none;
-    font-size: 13px;
     color: #FFFFFF;
     font-weight: 500;
 }
@@ -263,7 +284,7 @@ form button:hover {
 }
 
 
-/** BOTON CLASE */
+/** BOTONES */
 
 .btn {
     font-weight: 500;
@@ -282,6 +303,8 @@ form button:hover {
     background-color:rgba(242, 95, 58,0.6);
 }
 
+/* BOTON DEL PREFOOTER */
+
 #btn2 {
     background-color: #FFFFFF;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
@@ -296,6 +319,6 @@ form button:hover {
 }
 
 #btn2:hover {
-    color:rgba(243, 96, 59,0.5);
+    color:rgba(243, 96, 59,0.7);
     cursor: pointer;
 }
