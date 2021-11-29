@@ -9,7 +9,6 @@
 
 body {
     font-size: 16px;
-    background-color:rgba(229, 228, 229,0.2);
     opacity: 10;
 }
 
@@ -23,9 +22,30 @@ body {
     color: #B3B2B7;
 }
 
+
+/** BOTONES */
+
+.btn-style {
+    font-weight: 500;
+    height: 44px;
+    width: 140px;
+    border-radius: 50px;
+    padding: 10px;
+    background-color:rgb(242, 95, 58);
+    color: rgb(248, 222, 222);
+    box-shadow: 0px 4px 8px 0px #F2613B80;
+    border: none; 
+}
+
+.btn-style:hover {
+    cursor: pointer;
+    background-color:rgba(242, 95, 58,0.6);
+}
+
+
 /* TODO: HEADER */
 
-.header-flex {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,7 +59,7 @@ header nav {
     flex-grow: 0.2;
 }
 
-.listas-flex {
+.li-flex {
     display: flex;
     list-style: none;
     justify-content: space-around;
@@ -47,16 +67,16 @@ header nav {
     font-size: 14px;
 }
 
-.listas-flex a {
+.li-flex a {
     color: #242E52;
     text-decoration: none;
 }
 
-.listas-flex a:visited {
+.li-flex a:visited {
     color: #242E52;
 }
 
-.listas-flex a:hover {
+.li-flex a:hover {
     color: rgb(143, 148, 167);
 }
 
@@ -66,13 +86,16 @@ header nav {
 
 .contenedor-flex {
     display: flex;
-    margin: 5% 10%;
+    justify-content: space-around;
+    margin: 5% 8%;
+    flex-wrap: wrap;
 }
 
 /* contenedor flex, cada div dentro del flex tiene este valor */
 
 .contenido {
     width: 40vw;
+    min-width: 375px;
 }
 
 /* ? PRIMER SECTION */
@@ -88,6 +111,10 @@ header nav {
     margin: 28px 0;
     font-weight: 500;
     line-height: 26px;
+}
+
+.contenido img {
+    width: 40vw;
 }
 
 /* ? SEGUNDO SECTION */
@@ -136,14 +163,16 @@ header nav {
 #contenedor-flex {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 /* cards individuales */
 
 .contenedor-card {
     background-color: #FAFAFA;
-    width:445px;
+    width: 445px;
     height: 219px;
+    margin: 5% 0;
 }
 
 .profile-card {
@@ -170,11 +199,11 @@ header nav {
 /*TODO: PREFOOTER */
 
 #prefooter {
-    height: 25vh;
+    height: 10em;
     width: 100%;
     background-color: #F3613C;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 0 10%;
 }
@@ -202,7 +231,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     background-color:#1E1E26;
-    height: 30vh;
+    height: 30%;
     width: 100%;
     color: white;
     padding: 2%;
@@ -221,7 +250,6 @@ footer li {
     display: flex;
     flex-direction: column;
 }
-
 
 footer a {
     text-decoration: none;
@@ -284,25 +312,6 @@ form button:hover {
 }
 
 
-/** BOTONES */
-
-.btn {
-    font-weight: 500;
-    height: 44px;
-    width: 140px;
-    border-radius: 50px;
-    padding: 10px;
-    background-color:rgb(242, 95, 58);
-    color: rgb(248, 222, 222);
-    box-shadow: 0px 4px 8px 0px #F2613B80;
-    border: none; 
-}
-
-.btn:hover{
-    cursor: pointer;
-    background-color:rgba(242, 95, 58,0.6);
-}
-
 /* BOTON DEL PREFOOTER */
 
 #btn2 {
@@ -321,4 +330,31 @@ form button:hover {
 #btn2:hover {
     color:rgba(243, 96, 59,0.7);
     cursor: pointer;
+}
+
+/** MEDIA QUERIES **/
+
+@media screen and (max-width: 375px) {
+
+    .contenido img {
+        width: 100%;
+    }
+
+    .contenido {
+        text-align: center;
+    }
+
+    .contenido h1 {
+        font-size: 40px;
+    }
+
+    .contenido ol {
+        text-align: left;
+        margin-top: 5%;
+    }
+
+    .contenido {
+
+    }
+
 }
