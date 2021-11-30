@@ -10,7 +10,15 @@
 body {
     font-size: 16px;
     background-image: url('../imagenes/bg-tablet-pattern.svg');
-    background-repeat: space;
+    background-repeat: no-repeat;
+    background-position: 755px -122px;
+}
+
+#background {
+    position: absolute;
+    top: 1112px;
+    left: -400px;
+    z-index: -1;
 }
 
 /* TITULOS Y PARRAFOS*/
@@ -88,7 +96,6 @@ header nav {
     font-size: 20px;
     color: #242E52;
 }
-
 
 /* TODO: SECTIONS */
 
@@ -206,7 +213,7 @@ header nav {
 /* cards individuales */
 
 .contenedor-card {
-    background-color: #FAFAFA;
+    background-color: #e2dfdf;
     width: 445px;
     height: 219px;
     margin: 5% 0;
@@ -239,6 +246,7 @@ header nav {
     height: 10em;
     width: 100%;
     background-color: #F3613C;
+    background-image: url('../imagenes/bg-simplify-section-desktop.svg');
     display: flex;
     justify-content: space-around;
     align-items: center;
