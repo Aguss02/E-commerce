@@ -214,7 +214,7 @@ header nav {
 /* cards individuales */
 
 .contenedor-card {
-    background-color: #e2dfdf;
+    background-color: #fff5e9ea;
     width: 445px;
     height: 219px;
     margin: 5% 0;
@@ -382,7 +382,7 @@ form button:hover {
 
 @media screen and (max-width: 375px) {
 
-    /* MQ PARA EL HEADER */
+    /** MQ PARA EL HEADER */
     
     .nav-mobile {
         display: none;
@@ -401,7 +401,7 @@ form button:hover {
       display: block;
     }
     
-    /* MQ PARA LAS SECTION */
+    /** MQ PARA LAS SECTION */
 
     /* Ambas section */
 
@@ -443,7 +443,7 @@ form button:hover {
         order: 1;
     } */
 
-    /* MQ para las Cards */
+    /** MQ para las Cards */
 
     .mobile-none {
         display: none;
@@ -459,7 +459,7 @@ form button:hover {
 
     /* falta imagen */
 
-    /* MQ para el Prefooter */
+    /** MQ para el Prefooter */
 
     #prefooter {
         margin-top: 15%;
@@ -480,4 +480,13 @@ form button:hover {
 
     /* se podria arreglar el fondo */
 
+    /** MQ para el FOOTER */
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3% 2%;
+        height: 450px;
+    }
 }
