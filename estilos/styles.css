@@ -9,7 +9,8 @@
 
 body {
     font-size: 16px;
-    opacity: 10;
+    background-image: url('../imagenes/bg-tablet-pattern.svg');
+    background-repeat: space;
 }
 
 /* TITULOS Y PARRAFOS*/
@@ -21,7 +22,6 @@ body {
 .parrafos {
     color: #B3B2B7;
 }
-
 
 /** BOTONES */
 
@@ -123,10 +123,6 @@ header nav {
     line-height: 26px;
 }
 
-.contenido img {
-    width: 40vw;
-}
-
 /* ? SEGUNDO SECTION */
 
 .contenido h2 {
@@ -135,16 +131,47 @@ header nav {
     line-height: 41px;  
 }
 
-.contenido p .parrafos {
- padding-right: 15%;
+.contenido ul li{
+    font-weight: 500;
+    list-style: none;
 }
 
-.contenido ol {
-    padding: 0 8%;
-    margin: 0 2%;
+.contenido ul li p {
+    margin-left: 18%;
 }
 
+#one::before {
+    content: "01";
+    background-color: #F3603B;
+    color: white;
+    margin-right: 5%;
+    height: 43px;
+    width: 69px;
+    border-radius: 30px;
+    padding: 10px 25px;
+}
 
+#two::before {
+    content: "02";
+    background-color: #F3603B;
+    color: white;
+    margin-right: 5%;
+    height: 43px;
+    width: 69px;
+    border-radius: 30px;
+    padding: 10px 25px;
+}
+
+#three::before {
+    content: "03";
+    background-color: #F3603B;
+    color: white;
+    margin-right: 5%;
+    height: 43px;
+    width: 69px;
+    border-radius: 30px;
+    padding: 10px 25px;
+}
 
 /*TODO: SECTION CARDS */
 
