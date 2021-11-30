@@ -205,7 +205,7 @@ header nav {
 
 /* contenedor de todas las cards */
 
-#contenedor-flex {
+#contenedor-cards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -426,7 +426,7 @@ form button:hover {
         width: 90vw;
     }
 
-    /* Falta dar orden 1 */
+    /* ! Falta dar orden 1 */
 
     /* Segundo section */
 
@@ -439,8 +439,25 @@ form button:hover {
         margin: 6% 3%;
     }
 
-    #order-mobile {
+    /* #order-mobile {
         order: 1;
+    } */
+
+    /* MQ para las Cards */
+
+    .mobile-none {
+        display: none;
     }
 
+    #contenedor-cards {
+        margin: 10% 1%;
+    }
+
+    #cards-section h2 {
+        margin-bottom: 15%;
+    }
+
+    /* falta imagen */
+
+    /* MQ para el Prefooter */
 }
