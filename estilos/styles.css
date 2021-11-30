@@ -23,11 +23,11 @@ body {
 
 /* TITULOS Y PARRAFOS*/
 
-.titulos {
+.title {
     color: #232C50;
 }
 
-.parrafos {
+.paragraph {
     color: #B3B2B7;
 }
 
@@ -101,49 +101,50 @@ header nav {
 
 /*contenedor de las section */
 
-.contenedor-flex {
+.contenedor-section {
     display: flex;
     justify-content: space-around;
-    margin: 5% 8%;
+    margin: 5% 5%;
     flex-wrap: wrap;
 }
 
 /* contenedor flex, cada div dentro del flex tiene este valor */
 
-.contenido {
+.contenedor-div {
     width: 40vw;
     min-width: 375px;
+    padding: 3%;
 }
 
 /* ? PRIMER SECTION */
 
-.contenedor-flex h1 {
+.contenedor-div h1 {
     font-size: 58px;
     font-weight: 700;
-    margin: 28px 0px;
     line-height: 66,47px;
+    margin-top: 28px;
 }
 
-.contenedor-flex p {
-    margin: 28px 0;
+.contenedor-div p {
+    margin: 4% 0;
     font-weight: 500;
     line-height: 26px;
 }
 
 /* ? SEGUNDO SECTION */
 
-.contenido h2 {
+.contenedor-div h2 {
     font-size: 36px;
     font-weight: 700;
     line-height: 41px;  
 }
 
-.contenido ul li{
+.contenedor-div ul li{
     font-weight: 500;
     list-style: none;
 }
 
-.contenido ul li p {
+.contenedor-div ul li p {
     margin-left: 18%;
 }
 
@@ -153,7 +154,7 @@ header nav {
     color: white;
     margin-right: 5%;
     height: 43px;
-    width: 69px;
+    width: 50px;
     border-radius: 30px;
     padding: 10px 25px;
 }
@@ -164,7 +165,7 @@ header nav {
     color: white;
     margin-right: 5%;
     height: 43px;
-    width: 69px;
+    width: 50px;
     border-radius: 30px;
     padding: 10px 25px;
 }
@@ -175,7 +176,7 @@ header nav {
     color: white;
     margin-right: 5%;
     height: 43px;
-    width: 69px;
+    width: 50px;
     border-radius: 30px;
     padding: 10px 25px;
 }
@@ -387,6 +388,10 @@ form button:hover {
         display: none;
     }
 
+    header {
+        margin: 5% 2% 1% 2%; 
+
+    }
     header img {
         height: 4vh;
         margin-top: 10px;
@@ -396,4 +401,46 @@ form button:hover {
       display: block;
     }
     
+    /* MQ PARA LAS SECTION */
+
+    /* Ambas section */
+
+    .contenedor-div {
+        width: 80vw;
+        margin: 6% 5%;
+        padding: 0 3%;
+        text-align: center;
+    }
+
+    /* Primer section */
+
+    .contenedor-div h1 {
+        font-size: 40px;
+    }
+
+    main{
+        text-align: center;
+    }
+
+    .contenedor-div img {
+        width: 90vw;
+    }
+
+    /* Falta dar orden 1 */
+
+    /* Segundo section */
+
+    .contenedor-div ul li {
+        text-align: left;
+        margin: 15% 0;
+    }
+
+    .contenedor-div ul li p{
+        margin: 6% 3%;
+    }
+
+    #order-mobile {
+        order: 1;
+    }
+
 }
