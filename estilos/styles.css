@@ -9,16 +9,10 @@
 
 body {
     font-size: 16px;
-    background-image: url('../imagenes/bg-tablet-pattern.svg');
-    background-repeat: no-repeat;
-    background-position: 755px -122px;
-}
-
-#background {
-    position: absolute;
-    top: 1112px;
-    left: -400px;
-    z-index: -1;
+    background-image: url('../imagenes/bg-tablet-pattern.svg'), url('../imagenes/bg-tablet-pattern.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: 170% -15%, -110% 75%;
+    background-size: 65%;
 }
 
 /* TITULOS Y PARRAFOS*/
@@ -412,9 +406,6 @@ form button:hover {
     /* Ambas section */
 
     .contenedor-div {
-        width: 80vw;
-        margin: 6% 5%;
-        padding: 0 3%;
         text-align: center;
     }
 
@@ -424,15 +415,9 @@ form button:hover {
         font-size: 40px;
     }
 
-    main{
-        text-align: center;
-    }
-
     .contenedor-div img {
         width: 90vw;
     }
-
-    /* ! Falta dar orden 1 */
 
     /* Segundo section */
 
@@ -445,9 +430,10 @@ form button:hover {
         margin: 6% 3%;
     }
 
-    /* #order-mobile {
-        order: 1;
-    } */
+    #order-mobile {
+        flex-direction: column-reverse;
+        margin: 0px;
+    } 
 
     /** MQ para las Cards */
 
@@ -490,16 +476,17 @@ form button:hover {
 
     footer {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         padding: 3% 2%;
         height: 450px;
     }
 
-    footer::after {
+    footer span::after  {
         content: "Copyright 2020. All Rights Reserved";
         color: #B3B2B7;
         font-size: 10px;
+        margin-top: 10px;
     }
 
     footer nav {
