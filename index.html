@@ -128,10 +128,13 @@
                     focused. I can´t stop recommending them to everyone i talk to!”</p>
             </div>
         </div>
-        <button class="btn-style">Get Started</button>
+        <div id="ellipsis">
+            <i class="fas fa-ellipsis-h fa-2x"></i>
+        </div>
+        <div>
+            <button class="btn-style">Get Started</button>
+        </div>
     </section>
-
-    <!-- TODO: PREFOOTER -->
 
     <section id="prefooter">
         <div>
@@ -142,19 +145,17 @@
         </div>
     </section>
 
-    <!-- TODO: FOOTER -->
     <footer id="footer">
-        <div class="flex-column">
+        <div class="flex-column" id="mobile-icons">
             <div>
                 <img src="imagenes/logo.svg" alt="Logo">
             </div>
-            <span></span>
             <div id="icons">
-                <a href="#"><i class="fab fa-facebook-square"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-pinterest"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-square fa-lg"></i></a>
+                <a href="#"><i class="fab fa-youtube fa-lg"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="#"><i class="fab fa-pinterest fa-lg"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
             </div>
         </div>
         <div id="nav-footer">
@@ -176,10 +177,15 @@
         </div>
         <div class="flex-column">
             <form action="" method="post">
-                <input type="email" name="email" placeholder="Update in your inbox" required id="email">
-                <button type="submit">Go</button>
+                <div id="email-div">
+                    <input type="email" name="email" placeholder="Update in your inbox" required id="email">
+                    <span></span>
+                </div>
+                <div>
+                    <button type="submit">Go</button>
+                </div>
             </form>
-            <p class="paragraph mobile-none">Copyright 2020. All Rights Reserved</p>
+            <p class="paragraph" id="copyright">Copyright 2020. All Rights Reserved</p>
         </div>
     </footer>
 

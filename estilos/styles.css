@@ -100,8 +100,6 @@ header nav {
     flex-wrap: wrap;
 }
 
-/* contenedor flex, cada div dentro del flex tiene este valor */
-
 .contenedor-div {
     width: 40vw;
     min-width: 375px;
@@ -144,7 +142,7 @@ header nav {
     content: "01";
     background-color: #F3603B;
     color: white;
-    margin-right: 5%;
+    margin-right: 3%;
     height: 43px;
     width: 50px;
     border-radius: 30px;
@@ -155,7 +153,7 @@ header nav {
     content: "02";
     background-color: #F3603B;
     color: white;
-    margin-right: 5%;
+    margin-right: 3%;
     height: 43px;
     width: 50px;
     border-radius: 30px;
@@ -166,7 +164,7 @@ header nav {
     content: "03";
     background-color: #F3603B;
     color: white;
-    margin-right: 5%;
+    margin-right: 3%;
     height: 43px;
     width: 50px;
     border-radius: 30px;
@@ -193,6 +191,10 @@ header nav {
     margin-top: 2%;
 }
 
+#ellipsis {
+    display: none;
+}
+
 /* Cards */
 
 /* contenedor de todas las cards */
@@ -202,6 +204,7 @@ header nav {
     justify-content: center;
     flex-wrap: wrap;
 }
+
 
 /* cards individuales */
 
@@ -233,6 +236,8 @@ header nav {
     text-align: center;
 }
 
+
+
 /*TODO: PREFOOTER */
 
 #prefooter {
@@ -253,17 +258,13 @@ header nav {
     color: #FFFFFF;
 }
 
-/*TODO: FOOTER */
-
-/** FLEX EN FOOTER */
+/******************** FOOTER ********************/
 
 .flex-column {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-
-/* FOOTER */
 
 footer {
     display: flex;
@@ -315,8 +316,6 @@ footer p {
 }
 
 
-/* REDES SOCIALES */
-
 #icons {
    display: flex;
    justify-content: space-between;
@@ -326,8 +325,6 @@ footer p {
     color: orange;
 }
 
-/* FORMULARIO */
-
 form input {
     height: 44px;
     width: 201px;
@@ -335,9 +332,29 @@ form input {
     padding: 10px;
 }
 
+#email:focus{
+    outline: none;
+}
+
+#email:invalid{
+    border-color: #fd2020;
+    margin-bottom: 3%;
+}
+
+#email:invalid + span::after{
+    content: "Please insert a valid email";
+    color: #fd2020;
+}
 
 
-/* BOTON DE FORMULARIO */
+#email-div {
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+}
 
 form button {
     padding: 10px;
@@ -357,8 +374,6 @@ form button:hover {
     color: rgba(255, 255, 255, 0.6);
 }
 
-
-/* BOTON DEL PREFOOTER */
 
 #btn2 {
     background-color: #FFFFFF;
@@ -380,7 +395,13 @@ form button:hover {
 
 /** MEDIA QUERIES **/
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 550px) {
+
+
+    body {
+        background-position: 80px -4%, 220px 18%;
+        background-size: 110%, 80%;
+    }
 
     /** MQ PARA EL HEADER */
     
@@ -407,6 +428,11 @@ form button:hover {
 
     .contenedor-div {
         text-align: center;
+        padding: 0%;
+    }
+
+    .contenedor-section {
+        padding: 5% 5%;
     }
 
     /* Primer section */
@@ -426,12 +452,21 @@ form button:hover {
         margin: 15% 0;
     }
 
+    .contenedor-div ul li h4{
+        font-size: 17px;
+        background-color: rgba(243, 97, 60,0.1);
+        height: 2em;
+        padding-top: 1%;
+    }
+
     .contenedor-div ul li p{
         margin: 6% 3%;
+        font-size: 14px;
     }
 
     #order-mobile {
         flex-direction: column-reverse;
+        align-items: center;
         margin: 0px;
     } 
 
@@ -443,13 +478,22 @@ form button:hover {
 
     #contenedor-cards {
         margin: 10% 1%;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
     #cards-section h2 {
         margin-bottom: 15%;
     }
 
-    /* falta imagen */
+    #ellipsis {
+        display: inline;
+        color: #F3613C;
+    }
+
+    #ellipsis i {
+        margin-bottom: 20px;
+    }
+
 
     /** MQ para el Prefooter */
 
@@ -458,6 +502,7 @@ form button:hover {
         height: 350px;
         background-image: url('../imagenes/bg-simplify-section-mobile.svg');
         background-repeat: no-repeat;
+        background-position-y: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -470,27 +515,53 @@ form button:hover {
         margin-bottom: 5%;
     }
 
-    /* se podria arreglar el fondo */
-
     /** MQ para el FOOTER */
 
     footer {
-        display: flex;
         flex-direction: column-reverse;
         align-items: center;
         padding: 3% 2%;
         height: 450px;
-    }
-
-    footer span::after  {
-        content: "Copyright 2020. All Rights Reserved";
-        color: #B3B2B7;
-        font-size: 10px;
-        margin-top: 10px;
+        position: relative;
     }
 
     footer nav {
         justify-content: space-between;
+        margin-left: 30px;
+        margin-right: 30px;
     }
 
+    footer li {
+        margin: 12px 12px;
+    }
+
+    #mobile-icons {
+        flex-direction: column-reverse;
+        height: 100px;
+        margin: 5% 0;
+    }
+
+    #icons {
+        height: 4em;
+        width: 60vw;
+        justify-content: space-evenly;
+    }
+
+    footer img {
+        width: 60vw;
+    }
+
+    form input:invalid + p::after {
+        content: 'Please insert a valid email';
+    }
+
+    form {
+        display: flex;
+    }
+
+    #copyright {
+        position: absolute;
+        margin: 3%;
+        bottom: 0;
+    }
 }
