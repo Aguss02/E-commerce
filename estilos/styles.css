@@ -1,5 +1,3 @@
-/* GENERALES */
-
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -15,7 +13,7 @@ body {
     background-size: 65%;
 }
 
-/* TITULOS Y PARRAFOS*/
+/* ? ****** ESTILOS VARIOS ********/
 
 .title {
     color: #232C50;
@@ -24,8 +22,6 @@ body {
 .paragraph {
     color: #B3B2B7;
 }
-
-/** BOTONES */
 
 .btn-style {
     font-weight: 500;
@@ -42,9 +38,10 @@ body {
 .btn-style:hover {
     cursor: pointer;
     background-color:rgba(242, 95, 58,0.6);
+    transform: scale(1.1);
 }
 
-/* TODO: HEADER */
+/**************** HEADER ****************/
 
 header {
     display: flex;
@@ -81,17 +78,11 @@ header nav {
     color: rgb(143, 148, 167);
 }
 
-/* BARRAS MOBILE */
-
 #bars {
     display: none;
-    font-size: 20px;
-    color: #242E52;
 }
 
-/* TODO: SECTIONS */
-
-/*contenedor de las section */
+/***************** SECTIONS *****************/
 
 .contenedor-section {
     display: flex;
@@ -106,12 +97,11 @@ header nav {
     padding: 3%;
 }
 
-/* ? PRIMER SECTION */
+/* PRIMER SECTION */
 
 .contenedor-div h1 {
     font-size: 58px;
     font-weight: 700;
-    line-height: 66,47px;
     margin-top: 28px;
 }
 
@@ -121,7 +111,11 @@ header nav {
     line-height: 26px;
 }
 
-/* ? SEGUNDO SECTION */
+.contenedor-div img {
+    width: 34vw;
+}
+
+/* SEGUNDO SECTION */
 
 .contenedor-div h2 {
     font-size: 36px;
@@ -130,7 +124,6 @@ header nav {
 }
 
 .contenedor-div ul li{
-    font-weight: 500;
     list-style: none;
 }
 
@@ -171,9 +164,7 @@ header nav {
     padding: 10px 25px;
 }
 
-/*TODO: SECTION CARDS */
-
-/* Contenedor padre cards */
+/**************** SECTION CARDS ****************/
 
 #cards-section {
     text-align: center;
@@ -195,21 +186,15 @@ header nav {
     display: none;
 }
 
-/* Cards */
-
-/* contenedor de todas las cards */
-
 #contenedor-cards {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-
-/* cards individuales */
-
 .contenedor-card {
     background-color: #fff5e9ea;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 445px;
     height: 219px;
     margin: 5% 0;
@@ -236,9 +221,7 @@ header nav {
     text-align: center;
 }
 
-
-
-/*TODO: PREFOOTER */
+/**************** PREFOOTER ****************/
 
 #prefooter {
     height: 10em;
@@ -317,8 +300,8 @@ footer p {
 
 
 #icons {
-   display: flex;
-   justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 #icons i:hover {
@@ -345,7 +328,6 @@ form input {
     content: "Please insert a valid email";
     color: #fd2020;
 }
-
 
 #email-div {
     display: flex;
@@ -374,7 +356,6 @@ form button:hover {
     color: rgba(255, 255, 255, 0.6);
 }
 
-
 #btn2 {
     background-color: #FFFFFF;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
@@ -393,38 +374,34 @@ form button:hover {
     cursor: pointer;
 }
 
-/** MEDIA QUERIES **/
+/* ! *************** MEDIA QUERIES *************** ! */
 
 @media screen and (max-width: 550px) {
-
 
     body {
         background-position: 80px -4%, 220px 18%;
         background-size: 110%, 80%;
     }
 
-    /** MQ PARA EL HEADER */
-    
-    .nav-mobile {
-        display: none;
-    }
+/* ? ***** HEADER ***** ? */
 
     header {
         margin: 5% 2% 1% 2%; 
-
     }
+
     header img {
         height: 4vh;
         margin-top: 10px;
     }
 
     #bars {
-      display: block;
+        display: block;
+        font-size: 20px;
+        color: #242E52;
+        cursor: pointer;
     }
     
-    /** MQ PARA LAS SECTION */
-
-    /* Ambas section */
+/* ? ***** SECTIONS ***** ? */
 
     .contenedor-div {
         text-align: center;
@@ -432,7 +409,7 @@ form button:hover {
     }
 
     .contenedor-section {
-        padding: 5% 5%;
+        padding: 5% 0%;
     }
 
     /* Primer section */
@@ -442,7 +419,7 @@ form button:hover {
     }
 
     .contenedor-div img {
-        width: 90vw;
+        width: 85vw;
     }
 
     /* Segundo section */
@@ -466,11 +443,16 @@ form button:hover {
 
     #order-mobile {
         flex-direction: column-reverse;
-        align-items: center;
         margin: 0px;
     } 
 
-    /** MQ para las Cards */
+    #one::before , #two::before , #three:before {
+        height: 33px;
+        width: 38px;
+        padding: 5px 20px;
+    }
+
+/* ? ***** CARDS ***** ? */
 
     .mobile-none {
         display: none;
@@ -478,7 +460,6 @@ form button:hover {
 
     #contenedor-cards {
         margin: 10% 1%;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
     #cards-section h2 {
@@ -494,8 +475,7 @@ form button:hover {
         margin-bottom: 20px;
     }
 
-
-    /** MQ para el Prefooter */
+/* ? ***** PREFOOTER ***** ? */
 
     #prefooter {
         margin-top: 15%;
@@ -515,7 +495,7 @@ form button:hover {
         margin-bottom: 5%;
     }
 
-    /** MQ para el FOOTER */
+/* ? ***** FOOTER ***** ? */
 
     footer {
         flex-direction: column-reverse;
