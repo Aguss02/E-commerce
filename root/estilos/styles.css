@@ -38,7 +38,7 @@ body {
 .btn-style:hover {
     cursor: pointer;
     background-color:rgba(242, 95, 58,0.6);
-    transform: scale(1.1);
+    transition: background-color 0.7s;
 }
 
 /**************** HEADER ****************/
@@ -236,8 +236,6 @@ header nav {
 
 #prefooter h2 {
     font-size: 40px;
-    font-weight: 700;
-    line-height: 48px;
     color: #FFFFFF;
 }
 
@@ -279,16 +277,17 @@ footer li {
     flex-grow: 0.2;
 }
 
-#footer a {
+footer a {
     text-decoration: none;
     font-weight: 400;
-}
-
-#footer a:visited {
     color: white;
 }
 
-#footer a:hover {
+footer a:visited {
+    color: white;
+}
+
+footer a:hover {
     color: rgb(242, 95, 58);
 }
 
@@ -342,7 +341,7 @@ form button {
     padding: 10px;
     width: 63px;
     height: 48px;
-    background: #f3603b;
+    background: rgb(242, 95, 58);
     box-shadow: 0px 4px 8px 0px #F2613B80;
     border-radius: 50px;
     border: none;
@@ -352,8 +351,9 @@ form button {
 
 form button:hover {
     cursor: pointer;
-    background-color: rgba(243, 96, 59, 0.6);
+    background-color: rgba(242, 95, 58, 0.6);
     color: rgba(255, 255, 255, 0.6);
+    transition: color 0.7s, background-color 0.7s;
 }
 
 #btn2 {
@@ -362,7 +362,6 @@ form button:hover {
     border-radius: 50px;
     font-weight: 500;
     font-size: 13px;
-    line-height: 19px;
     color: rgb(243, 96, 59);
     border: none;
     width: 134px;
@@ -371,7 +370,9 @@ form button:hover {
 
 #btn2:hover {
     color:rgba(243, 96, 59,0.7);
+    background-color: rgb(255, 215, 205);
     cursor: pointer;
+    transition: color 0.7s, background-color 0.7s;
 }
 
 /* ! *************** MEDIA QUERIES *************** ! */
@@ -406,6 +407,7 @@ form button:hover {
     .contenedor-div {
         text-align: center;
         padding: 0%;
+        width: 100vw;
     }
 
     .contenedor-section {
@@ -426,7 +428,7 @@ form button:hover {
 
     .contenedor-div ul li {
         text-align: left;
-        margin: 15% 0;
+        margin: 15% 2%;
     }
 
     .contenedor-div ul li h4{
@@ -456,6 +458,10 @@ form button:hover {
 
     .mobile-none {
         display: none;
+    }
+
+    .contenedor-card {
+        width: 95vw;
     }
 
     #contenedor-cards {
@@ -489,7 +495,6 @@ form button:hover {
     }
     
     #prefooter h2 {
-        font-size: 40px;
         margin-bottom: 5%;
     }
 
